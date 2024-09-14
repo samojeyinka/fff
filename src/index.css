@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* PAGINATIONS IN EXPLORE COMPONENT AND SEARCH GIGS FOLDER IN GIGCOMPONENT */
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 10px;
+  color: #174568;
+  cursor: pointer;
+}
+
+.paginationBttns a:hover {
+  color: #d3dbe1;
+}
+
+.paginationActive a {
+  color: white;
+  background-color: #174568;
+}
+
+.paginationDisabled a {
+  color: grey;
+}
+
+/* SLICK IN SERVICES COMPONENTS AND OTHER PLACES WHERE I USE SLICK */
+.slick-next {
+  background-color: transparent !important;
+  color: transparent !important;
+}
+
+.slick-next::before {
+  background-color: transparent !important;
+  color: #121212 !important;
+  padding: 10px !important;
+  border: 2px solid #eaeaea;
+  border-radius: 100%;
+}
+
+.slick-prev {
+  background-color: transparent !important;
+  color: transparent !important;
+  left: -100px !important;
+}
+
+.slick-prev::before {
+  background-color: transparent !important;
+  color: #121212 !important;
+  padding: 10px !important;
+  border: 2px solid #eaeaea;
+  border-radius: 100%;
+  left: 10px !important;
+}
+
+/* SLICK IN SERVICES COMPONENTS AND OTHER PLACES WHERE I USE SLICK FOR SM SCREENS*/
+
+@media only screen and (max-width: 640px) {
+  .slick-next {
+    background-color: transparent !important;
+    color: transparent !important;
+    margin-right: 5px;
+  }
+
+  .slick-next::before {
+    background-color: transparent !important;
+    color: #121212 !important;
+    padding: 3px !important;
+    border: 2px solid #eaeaea;
+    border-radius: 100%;
+  }
+
+  .slick-prev {
+    background-color: transparent !important;
+    color: transparent !important;
+    left: -100px !important;
+  }
+
+  .slick-prev::before {
+    background-color: transparent !important;
+    color: #121212 !important;
+    padding: 3px !important;
+    border: 2px solid #eaeaea;
+    border-radius: 100%;
+    margin-left: 20px !important;
+  }
+}
+
+/* PAGINATIONS IN EXPLORE COMPONENT AND SEARCH GIGS FOLDER IN GIGCOMPONENT FOR SM SCREENS*/
+
+@media only screen and (max-width: 640px) {
+  .paginationBttns {
+    margin-left: 6% !important;
+    margin-bottom: 20px;
+  }
+  .paginationBttns a {
+    padding: 10px;
+    margin: 20px;
+    color: #174568;
+    cursor: pointer;
+  }
+  .slick-prev {
+    background-color: transparent !important;
+    color: transparent !important;
+    left: -50px !important;
+  }
+
+  .paginationActive a {
+    color: white;
+    background-color: #174568;
+  }
+}
+
+/* PAGINATIONS IN EXPLORE COMPONENT AND SEARCH GIGS FOLDER IN GIGCOMPONENT FOR MD SCREENS*/
+@media only screen and (max-width: 768px) {
+  .paginationBttns {
+    margin-left: 140%;
+    margin-bottom: 20px;
+  }
+
+  .slick-prev {
+    background-color: transparent !important;
+    color: transparent !important;
+    left: -50px !important;
+  }
+}
+
+.Sidebar.Items {
+  background-color: white !important;
+}
+
+/* SIDEBAR CAROUSEL USED IN CLIENT DASHBOARD FOR MOBILE DEVICES */
+.MuiToolbar-root {
+  background-color: white !important;
+  min-height: 20px !important;
+  box-shadow: none !important;
+}
+
+.css-ciy9n4-MuiPaper-root-MuiAppBar-root {
+  box-shadow: none !important;
+}
+
+.MuiSvgIcon-root {
+  color: black;
+}
+
+/* To style the components EDIT PROFILE / PREFERENCE / SECURITY TAGS in the Admin and Client Dashboard SETTINGS components */
+.MuiButtonBase-root {
+  font-weight: 0px !important;
+  font-size: 10px !important;
+  color: gray !important;
+  font-style: Poppins !important;
+}
+
+.MuiButtonBase-root:hover {
+  color: #174568 !important;
+}
+
+/* To change the indicator under the EDIT PROFILE / PREFERENCE / SECURITY Tags used in SETTINGS compoennt of Client and Admin  */
+.MuiTabs-indicator {
+  background-color: #174568 !important;
+  height: 3px !important;
+}
+.css-1k455el {
+  min-height: 70px !important;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 2px !important;
+}
+
+/* Radio in FILTER HELLOCIANS used in ALL GIGS component to filter out Gigs */
+.MuiTypography-root {
+  font-size: 10px !important;
+  padding-left: 7px !important;
+}
+
+.MuiButtonBase-root {
+  padding: 1px 0px 0px 0px !important;
+}
+.MuiSvgIcon-root {
+  width: 18px !important;
+}
+
+/* stars in FILTER HELLOCIANS used in ALL GIGS component to filter out Gigs */
+.MuiSvgIcon-fontSizeInherit {
+  width: 20px !important;
+}
+
+/* input tag used in FILTER HELLOCIANS used in ALL GIGS component to filter out Gigs */
+.MuiInput-sizeMd {
+  min-height: 5px !important;
+}
+
+/* progress bar in ADMIN DASHBOARD in ongoing project component */
+.text-cyan-300 {
+  background-color: #4318ff;
+}
+
+/* TAB in PAYMENT SETTINGS IN CLIENT DASHBOARD */
+.rounded-t-lg {
+  font-size: 8px !important;
+  background-color: transparent !important;
+  --tw-ring-shadow: transparent !important;
+  border: 1px solid black !important;
+  border-radius: 0% !important;
+  padding: 1px 5px 1px 1px !important;
+  margin-right: 6px !important;
+  margin-top: 10px !important;
+}
+
+.text-cyan-600 {
+  color: black;
+  font-size: 10px;
+}
+
+.border-b {
+  border: transparent !important;
+}
+
+/* DROPDOWN in ADMIN ADD NEW GIG COMPONENT */
+.MuiMenuButton-colorNeutral {
+  background-color: #174568 !important;
+  color: white !important;
+}
+
+/* verify styling */
+
+.auth {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+}
+
+.auth-form {
+  margin-top: 7rem;
+  width: 60%;
+}
+
+.auth-image {
+  width: 40%;
+}
+
+.auth-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 820px) {
+  .auth-form {
+    margin-top: 7rem;
+    width: 100%;
+  }
+
+  .auth-image {
+    display: none;
+  }
+
+  .auth-form button {
+    width: 100%;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+.main {
+  height: 100vh !important;
+  overflow: hidden;
+}
+
+.chat__lists__boxes {
+  height: calc(100vh - 12rem);
+  overflow: auto !important;
+}
+
+.active__chat {
+  width: calc(100vw - 36.195rem);
+  position: relative;
+}
+
+.chat__room__chats {
+  min-height: calc(100vh - 18rem);
+  max-height: calc(100vh - 18rem);
+  overflow: auto;
+}
+
+.chat__room__tools {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.chat__room__tools__box {
+  border-radius: 1.8rem;
+  overflow: hidden;
+}
+
+.chat__room__info {
+  max-width: 0%;
+  height: 100vh;
+  overflow: auto;
+}
+
+
